@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.maple.program.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.maple.program.bean.User">
+        <id column="id" property="id" />
+        <result column="account" property="account" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+        <result column="password_date" property="passwordDate" />
+        <result column="address" property="address" />
+        <result column="birthday" property="birthday" />
+        <result column="sex" property="sex" />
+        <result column="mobile" property="mobile" />
+        <result column="email" property="email" />
+        <result column="description" property="description" />
+        <result column="comment" property="comment" />
+        <result column="picture" property="picture" />
+        <result column="org_id" property="orgId" />
+        <result column="status" property="status" />
+        <result column="is_delete" property="isDelete" />
+        <result column="is_system" property="isSystem" />
+        <result column="create_by" property="createBy" />
+        <result column="last_update_by" property="lastUpdateBy" />
+        <result column="create_date" property="createDate" />
+        <result column="last_update_date" property="lastUpdateDate" />
+        <result column="is_activation" property="isActivation" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, account, name, password, password_date, address, birthday, sex, mobile, email, description, comment, picture, org_id, status, is_delete, is_system, create_by, last_update_by, create_date, last_update_date, is_activation
+    </sql>
+
+</mapper>
