@@ -8,5 +8,10 @@
     <artifactId>maple-common</artifactId>
     <version>1.0.0</version>
 
+    <modules>
+        <module>common-boot</module>
+        <module>program-boot</module>
+    </modules>
+
 
 </project>
