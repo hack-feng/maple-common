@@ -44,7 +44,21 @@ spring:
     filters: stat,wall,log4j       # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=3000  # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     useGlobalDataSourceStat: true  # 合并多个DruidDataSource的监控数据
-
+  mail:
+    default-encoding: UTF-8
+    host: smtp.qq.com
+    username: 1150640979@qq.com
+    password: yqvvwxexzaeghgji
+    port: 22
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
 
 # 配置mybatis-plus的xml和bean的目录
 mybatis-plus:

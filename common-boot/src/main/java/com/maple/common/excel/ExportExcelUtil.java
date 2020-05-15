@@ -166,7 +166,12 @@ public class ExportExcelUtil {
             //产生序号，1,2,3,4,5...的递增序号，不需要，header去掉‘序号’就可以了
             if("序号".equals(excel.getHeaders().get(0))){
                 XSSFCell cell = row.createCell(0);
-                cell.setCellStyle(titleStyleOne);
+                // 设置隔行样式
+                if(i % 2 == 0){
+                    cell.setCellStyle(titleStyleOne);
+                }else{
+                    cell.setCellStyle(titleStyleTwo);
+                }
                 cell.setCellValue(i + 1 + "");
             }
 

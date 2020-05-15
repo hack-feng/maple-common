@@ -23,7 +23,7 @@ public class MybatisPlusGenerator {
 
         String auth = "ZhangFZ";
         String packageName = "com.maple.program";
-        String path = "D:";
+        String path = "D:\\WORKPATH\\maple-common\\program-boot\\src\\main\\java";
         String url = "111.229.70.6:3306/maple_common";
         String username = "root";
         String password = "zfz123456";
@@ -106,7 +106,7 @@ public class MybatisPlusGenerator {
 //                .setInclude(".*.");
                 .setLogicDeleteFieldName("is_delete")
                 .setRestControllerStyle(true)
-                .setInclude("usc_user");
+                .setInclude("ma_mail_content");
         //集成注入设置
         //注入全局设置
         new AutoGenerator().setGlobalConfig(config)

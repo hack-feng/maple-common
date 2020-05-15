@@ -17,7 +17,9 @@ public class ExportExcelTitle {
     @Getter
     @AllArgsConstructor
     public enum table1 {
-
+        /**
+         * 模拟table1的header和keys
+         */
         INDEX("序号", "index"),
         CODE("标题单号", "code"),
         NAME("标题名称",  "name"),
@@ -58,7 +60,9 @@ public class ExportExcelTitle {
     @Getter
     @AllArgsConstructor
     public enum table2 {
-
+        /**
+         * 模拟table2的header和keys
+         */
         INDEX("序号", "index"),
         CODE("标题名称", "code"),
         NAME("标题名称",  "name"),
@@ -91,7 +95,6 @@ public class ExportExcelTitle {
             excelBean.setKeys(valueKey);
             excelBean.setTheme(ExportExcelTheme.ORANGE);
             excelBean.setVerticalMergerColumnHeaders(titleCn);
-            // excelBean.setHorizontalMergerColumnHeaders(titleCn);
             return excelBean;
         }
     }
